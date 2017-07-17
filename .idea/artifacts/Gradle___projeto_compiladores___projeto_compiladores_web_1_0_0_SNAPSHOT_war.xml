@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="Gradle : projeto_compiladores : projeto_compiladores.web-1.0.0-SNAPSHOT.war">
+    <output-path>$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.web/build/libs</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/projeto_compiladores.parent" />
+    </properties>
+    <root id="archive" name="projeto_compiladores.web-1.0.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="Gradle : projeto_compiladores : projeto_compiladores.web-1.0.0-SNAPSHOT.war (exploded)" />
+    </root>
+  </artifact>
+</component>

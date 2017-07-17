@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="projeto_compiladores.ide_main" target="1.8" />
+      <module name="projeto_compiladores.ide_test" target="1.8" />
+      <module name="projeto_compiladores.idea_main" target="1.8" />
+      <module name="projeto_compiladores.idea_test" target="1.8" />
+      <module name="projeto_compiladores.web_main" target="1.8" />
+      <module name="projeto_compiladores.web_test" target="1.8" />
+      <module name="projeto_compiladores_main" target="1.8" />
+      <module name="projeto_compiladores_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores/projeto_compiladores.iml" filepath="$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores/projeto_compiladores.iml" group="projeto_compiladores" />
+      <module fileurl="file://$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.ide/projeto_compiladores.ide.iml" filepath="$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.ide/projeto_compiladores.ide.iml" group="projeto_compiladores.ide" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/projeto_compiladores.ide/projeto_compiladores.ide_main.iml" filepath="$PROJECT_DIR$/.idea/modules/projeto_compiladores.ide/projeto_compiladores.ide_main.iml" group="projeto_compiladores.ide" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/projeto_compiladores.ide/projeto_compiladores.ide_test.iml" filepath="$PROJECT_DIR$/.idea/modules/projeto_compiladores.ide/projeto_compiladores.ide_test.iml" group="projeto_compiladores.ide" />
+      <module fileurl="file://$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.idea/projeto_compiladores.idea.iml" filepath="$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.idea/projeto_compiladores.idea.iml" group="projeto_compiladores.idea" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/projeto_compiladores.idea/projeto_compiladores.idea_main.iml" filepath="$PROJECT_DIR$/.idea/modules/projeto_compiladores.idea/projeto_compiladores.idea_main.iml" group="projeto_compiladores.idea" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/projeto_compiladores.idea/projeto_compiladores.idea_test.iml" filepath="$PROJECT_DIR$/.idea/modules/projeto_compiladores.idea/projeto_compiladores.idea_test.iml" group="projeto_compiladores.idea" />
+      <module fileurl="file://$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.parent.iml" filepath="$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.web/projeto_compiladores.web.iml" filepath="$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.web/projeto_compiladores.web.iml" group="projeto_compiladores.web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/projeto_compiladores.web/projeto_compiladores.web_main.iml" filepath="$PROJECT_DIR$/.idea/modules/projeto_compiladores.web/projeto_compiladores.web_main.iml" group="projeto_compiladores.web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/projeto_compiladores.web/projeto_compiladores.web_test.iml" filepath="$PROJECT_DIR$/.idea/modules/projeto_compiladores.web/projeto_compiladores.web_test.iml" group="projeto_compiladores.web" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/projeto_compiladores/projeto_compiladores_main.iml" filepath="$PROJECT_DIR$/.idea/modules/projeto_compiladores/projeto_compiladores_main.iml" group="projeto_compiladores" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/projeto_compiladores/projeto_compiladores_test.iml" filepath="$PROJECT_DIR$/.idea/modules/projeto_compiladores/projeto_compiladores_test.iml" group="projeto_compiladores" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,4 @@
+include 'projeto_compiladores'
+include 'projeto_compiladores.ide'
+include 'projeto_compiladores.idea'
+include 'projeto_compiladores.web'

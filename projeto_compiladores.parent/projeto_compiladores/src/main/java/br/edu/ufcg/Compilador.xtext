@@ -1,0 +1,9 @@
+grammar br.edu.ufcg.compilador with org.eclipse.xtext.common.Terminals
+
+generate compilador "http://www.edu.br/ufcg/compilador"
+
+Model:
+	greetings+=Greeting*;
+	
+Greeting:
+	'Hello' name=ID '!';

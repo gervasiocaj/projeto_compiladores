@@ -1,0 +1,62 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Gradle : projeto_compiladores : projeto_compiladores.web-1.0.0-SNAPSHOT.war (exploded)">
+    <output-path>$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.web/build/libs/exploded/projeto_compiladores.web-1.0.0-SNAPSHOT.war</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$/projeto_compiladores.parent">
+        <manifest>TWFuaWZlc3QtVmVyc2lvbjogMS4wDQoNCg==</manifest>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.web/build/libs/exploded/projeto_compiladores.web-1.0.0-SNAPSHOT.war/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="projeto_compiladores.web_main/web/Web Gradle : projeto_compiladores.web-1.0.0-SNAPSHOT.war" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="projeto_compiladores.web_main" />
+          <element id="dir-copy" path="$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.web/build/resources/main" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="projeto_compiladores-projeto_compiladores-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="projeto_compiladores_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores/build/resources/main" />
+          </element>
+          <element id="archive" name="projeto_compiladores-projeto_compiladores.ide-1.0.0-SNAPSHOT.jar">
+            <element id="module-output" name="projeto_compiladores.ide_main" />
+            <element id="dir-copy" path="$PROJECT_DIR$/projeto_compiladores.parent/projeto_compiladores.ide/build/resources/main" />
+          </element>
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext.xbase.web/2.9.2/660f6ef699aa95789eb4c4684eb08579957d3b79/org.eclipse.xtext.xbase.web-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext.web.servlet/2.9.2/3c8acf2aafc51b1ad91127ef2290f4f2de85c321/org.eclipse.xtext.web.servlet-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtend/org.eclipse.xtend.lib/2.9.2/e267e95ac8eb2e100a6c4f8916e070186ac8b34b/org.eclipse.xtend.lib-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/requirejs/2.1.20/f3460aa33d808eaebb5831cae4bd5cb83dff89e0/requirejs-2.1.20.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/jquery/2.1.4/444c76e4ff085cac934a668ea52b9e29a40e45e6/jquery-2.1.4.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.webjars/ace/1.2.0/e99cbc794819d3e39f4fa78833953dea6dfead08/ace-1.2.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext/2.9.2/fe6ce4cc4969bbbc3694f913050e342e3ecb817e/org.eclipse.xtext-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext.xbase/2.9.2/ea735d9752e0787247ca20f02be5324ed3f3610b/org.eclipse.xtext.xbase-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext.ide/2.9.2/7236d409e0c2dff7d134db9745671c4db864526c/org.eclipse.xtext.ide-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext.xbase.ide/2.9.2/2999ced7277c9a12c05a0ea3dcb3f5816d08d6a5/org.eclipse.xtext.xbase.ide-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext.web/2.9.2/bce5ce569e3eba7458f8b0e0154f36afc781394b/org.eclipse.xtext.web-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.17/5af35056b4d257e4b64b9e8069c0746e8b08629f/log4j-1.2.17.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.5/686c608d1805b6d4d425ec4459e88164ffc85870/gson-2.5.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext.xbase.lib/2.9.2/a4c4bc06e20da9f5365887bba8ca754004e93879/org.eclipse.xtext.xbase.lib-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtend/org.eclipse.xtend.lib.macro/2.9.2/77f9838ae372a1ae1592bc07f838ed3058d5a9fb/org.eclipse.xtend.lib.macro-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext.util/2.9.2/18066eb37aa210aa09cdcb02e1941ce7f278186b/org.eclipse.xtext.util-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/14.0.1/69e12f4c6aeac392555f1ea86fab82b5e5e31ad4/guava-14.0.1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/3.0/9d84f15fe35e2c716a02979fb62f50a29f38aefa/guice-3.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore/2.12.0/644751074e8b448526815f9bdeda26770df2e213/org.eclipse.emf.ecore-2.12.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.common/2.12.0/ce79e5cc3c2de3e8d96a6df4dad3bf5c9fa6b7d7/org.eclipse.emf.common-2.12.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.ecore.xmi/2.12.0/ad136ea23fcdaebec17ec6c730dfdf74b2077c37/org.eclipse.emf.ecore.xmi-2.12.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.antlr/antlr-runtime/3.2/31c746001016c6226bd7356c9f87a6a084ce3715/antlr-runtime-3.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.equinox/org.eclipse.equinox.common/3.6.0/78e5d0b8516b042495660da36ce5114650f8f156/org.eclipse.equinox.common-3.6.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.xtext/org.eclipse.xtext.common.types/2.9.2/d584740e6c55a03e339ca56d3bc0f480aefb228b/org.eclipse.xtext.common.types-2.9.2.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.sonatype.sisu.inject/cglib/2.2.1-v20090111/7ce5e983fd0e6c78346f4c9cbfa39d83049dda2/cglib-2.2.1-v20090111.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.codegen/2.11.0/fc79590ac6de1f24c79f7b133d304831776c998b/org.eclipse.emf.codegen-2.11.0.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.mwe2.lib/2.8.3/21aa33939a473199ab8375b643e22377a4f24a6f/org.eclipse.emf.mwe2.lib-2.8.3.jar" />
+          <element id="file-copy" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.eclipse.emf/org.eclipse.emf.mwe2.runtime/2.8.3/a70fdd029498e50c380bb4ba3c30d07a45d0e3bf/org.eclipse.emf.mwe2.runtime-2.8.3.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
