@@ -1,9 +1,239 @@
-grammar br.edu.ufcg.compilador with org.eclipse.xtext.common.Terminals
+grammar br.edu.ufcg.Compilador with org.eclipse.xtext.common.Terminals
 
-generate compilador "http://www.edu.br/ufcg/compilador"
+generate Compilador "http://ufcg.edu.br/Compilador"
 
 Model:
 	greetings+=Greeting*;
 	
 Greeting:
 	'Hello' name=ID '!';
+
+package_statement:
+    "package" package_name ";"
+;
+
+import_statement:
+    "import" ( ( package_name "." "*" ";" ) | ( class_name | interface_name ) ) ";"
+;
+
+compilation_unit:
+    package_statement? import_statement* type_declaration*
+;
+
+terminal identifier:
+    ('a'..'Z'|'$'|'_') ('a'..'Z'|'$'|'_'|'0'..'9')*
+;
+
+// recursão à esquerda
+package_name:
+    identifier | (package_name '.' identifier)
+;
+
+class_name:
+    identifier | (package_name '.' identifier)
+;
+
+interface_name:
+    identifier | (package_name '.' identifier)
+;
+
+type_specifier:
+    "boolean" | "byte" | "char" | "short" | "int" | "float" | "long" | "double"
+    | class_name
+    | interface_name
+;
+
+type:
+    type_specifier ('[' ']')? // pode ser array
+;
+
+parameter:
+    type identifier ('[' ']')?
+;
+
+parameter_list:
+    parameter (',' parameter)?
+;
+
+modifier:
+    "public" | "private" | "protected" | "static" | "final" | "native" | "synchronized" | "abstract" | "threadsafe" | "transient"
+;
+
+terminal doc_comment:
+    "/**"  ->  "*/"
+;
+
+arglist:
+    expression (',' expression )*
+;
+
+testing_expression:
+    expression ( '>' | '<' | '>=' | '<=' | '==' | '!=' ) expression
+;
+
+logical_expression:
+    ( '!' expression )
+    | ( expression ( '&' | '&=' | '|' | '|=' | '^' | '^=' | ( '&&' ) | '||=' | '%' | '%=' ) expression )
+    | ( expression '?' expression ':' expression )
+    | "true"
+    | "false"
+;
+
+string_expression:
+    expression ( '+' | '+=' ) expression
+;
+
+bit_expression:
+    ( '~' expression )
+    | ( expression ( '>>=' | '<<' | '>>' | '>>>' ) expression )
+;
+
+casting_expression:
+    '(' type ')' expression
+;
+
+creating_expression:
+    "new" ( ( class_name '(' arglist? ')' )
+    | ( type_specifier ('[' expression ']')? ('[' ']')* )
+    | ( "(" expression ")" ) )
+;
+
+terminal integer_literal:
+    (
+            ( '1'..'9' ( '0'..'9' )* )
+            | ( '0'..'7' )*
+            | ( '0' 'x' ('0'..'9'|'a'..'f')+ )
+    )
+    ( 'l' )?
+;
+
+terminal character:
+    'a'..'z'
+;
+
+terminal string_:
+    "\"" character* "\""
+;
+
+literal_expression:
+    integer_literal | string_ | character // | float_literal
+;
+
+expression:
+    numeric_expression
+    | testing_expression
+    | logical_expression
+    | string_expression
+    | bit_expression
+    | casting_expression
+    | creating_expression
+    | literal_expression
+    | "null"
+    | "super"
+    | "this"
+    | identifier
+    | ( '(' expression ')' )
+    | ( expression    (
+            ( '(' arglist? ')' )
+            | ( '[' expression ']' )
+            | ( "." expression )
+            | ( "," expression )
+            | ( "instanceof" ( class_name | interface_name ) )
+    ) )
+;
+
+numeric_expression:
+    ( ( '-' | '++' | '--' ) expression )
+    | ( expression ( '++' | '--' ) )
+    | ( expression ( '+' | '+=' | '-' | '-=' | '*' | '*=' | '/' | '/=' | '%' | '%=' ) expression )
+;
+
+variable_initializer:
+    expression | ( '{' ( variable_initializer ( ',' variable_initializer )*  (',')?  )? '}' )
+;
+
+variable_declarator:
+    identifier ( '[' ']' )* ( "=" variable_initializer )?
+;
+
+variable_declaration:
+    modifier? type variable_declarator ( ',' variable_declarator )? ';'
+;
+
+if_statement:
+    "if" '(' expression ')' statement ( "else" statement )?
+;
+
+do_statement:
+    "do" statement "while" '(' expression ')' ';'
+;
+
+while_statement:
+    "while" '(' expression ')' statement
+;
+
+for_statement:
+    "for" '(' ( variable_declaration | ( expression ';' ) | ';' ) expression? ';' expression? ';' ')' statement
+;
+
+try_statement:
+    "try" statement ( "catch" '(' parameter ')' statement )* ( "finally" statement )?
+;
+
+switch_statement:
+    "switch" '(' expression ')' '{' ( ( "case" expression ':' ) | ( "default" ':' ) | statement )* '}'
+;
+
+statement:
+    variable_declaration
+    | ( expression ";" )
+    | statement_block
+    | if_statement
+    | do_statement
+    | while_statement
+    | for_statement
+    | try_statement
+    | switch_statement
+    | ( "synchronized" "(" expression ")" statement )
+    | ( "return" expression? ";" )
+    | ( "throw" expression ";" )
+    | ( identifier ":" statement )
+    | ( "break" identifier? ";" )
+    | ( "continue" identifier? ";" )
+    | ( ";" )
+;
+
+statement_block:
+    '{' statement* '}'
+;
+
+static_initializer:
+    "static" statement_block
+;
+
+method_declaration:
+    modifier* type identifier '(' parameter_list? ')' ( '[' ']' )* (statement_block | ';')
+;
+
+constructor_declaration:
+    modifier* identifier '(' parameter_list? ')' statement_block
+;
+
+field_declaration:
+    ( doc_comment? ( method_declaration | constructor_declaration | variable_declaration ) )
+    | static_initializer
+    | ';'
+;
+
+class_declaration:
+    modifier* "class" identifier ( "extends" class_name )?
+    ( "implements" interface_name ( ',' interface_name )* )? '{' field_declaration* '}'
+;
+
+interface_declaration:
+    modifier* "interface" identifier ( "extends" interface_name (',' interface_name)* )? '{' field_declaration* '}'
+;
+
+type_declaration:
+    doc_comment? ( class_declaration | interface_declaration ) ';'
+;
