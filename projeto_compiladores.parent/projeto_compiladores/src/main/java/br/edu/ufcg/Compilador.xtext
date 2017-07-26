@@ -119,6 +119,26 @@ literal_expression:
     integer_literal | string_ | character // | float_literal
 ;
 
+float_literal:
+    (
+            ( decimal_digits  '.'  ( decimal_digits ) ( exponent_part )  ( float_type_suffix )  )
+            | (  '.' decimal_digits  ( exponent_part )  ( float_type_suffix )  )
+            | ( decimal_digits  ( exponent_part )  ( float_type_suffix )  )
+    )
+;
+
+terminal decimal_digits:
+    '0'..'9'  ( '0'..'9'  )*
+;
+
+terminal exponent_part:
+    'e'  (  '+'  |  '-'  ) decimal_digits
+;
+
+terminal float_type_suffix:
+    'f' |  'd'
+;
+
 expression:
     numeric_expression
     | testing_expression
